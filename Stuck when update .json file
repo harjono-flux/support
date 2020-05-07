@@ -1,0 +1,55 @@
+hello, can you help me, im newbie in programming, and i try to setting my own website.
+I got problem when editing config_en.json from flexbuilder
+when i paste the code to config_en.json and running the program, always stack in [Fluxstore][Tabbar] build
+
+
+
+flutter (24491): [Fluxstore][Tabbar] build
+I/flutter (24491): ══╡ EXCEPTION CAUGHT BY SCHEDULER LIBRARY ╞═════════════════════════════════════════════════════════
+I/flutter (24491): The following NoSuchMethodError was thrown during a scheduler callback:
+I/flutter (24491): The getter 'length' was called on null.
+I/flutter (24491): Receiver: null
+I/flutter (24491): Tried calling: length
+I/flutter (24491): 
+I/flutter (24491): When the exception was thrown, this was the stack:
+I/flutter (24491): #0      Object.noSuchMethod (dart:core-patch/object_patch.dart:53:5)
+I/flutter (24491): #1      MainTabsState.loadTabBar.<anonymous closure> (package:fstore/tabbar.dart:135:53)
+I/flutter (24491): #2      State.setState (package:flutter/src/widgets/framework.dart:1148:30)
+I/flutter (24491): #3      MainTabsState.loadTabBar (package:fstore/tabbar.dart:134:5)
+I/flutter (24491): #4      MainTabsState.afterFirstLayout (package:fstore/tabbar.dart:79:5)
+I/flutter (24491): #5      AfterLayoutMixin.initState.<anonymous closure> (package:after_layout/after_layout.dart:10:38)
+I/flutter (24491): #6      SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1102:15)
+I/flutter (24491): #7      SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1049:9)
+I/flutter (24491): #8      SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:957:5)
+I/flutter (24491): #12     _invoke (dart:ui/hooks.dart:259:10)
+I/flutter (24491): #13     _drawFrame (dart:ui/hooks.dart:217:3)
+I/flutter (24491): (elided 3 frames from package dart:async)
+I/flutter (24491): ════════════════════════════════════════════════════════════════════════════════════════════════════
+I/flutter (24491): [Fluxstore][wocommerce_api][08:17:22.316352] getAsync END [endPoint:flutter/cache] url:flutter/cache
+I/flutter (24491): [Debug] Finish Load AppConfig
+I/flutter (24491): [Fluxstore][AppState] Init Data Finish
+E/flutter (24491): [ERROR:flutter/lib/ui/ui_dart_state.cc(157)] Unhandled Exception: NoSuchMethodError: The getter 'owner' was called on null.
+E/flutter (24491): Receiver: null
+E/flutter (24491): Tried calling: owner
+E/flutter (24491): #0      Object.noSuchMethod (dart:core-patch/object_patch.dart:53:5)
+E/flutter (24491): #1      Provider.of (package:provider/src/provider.dart:193:15)
+E/flutter (24491): #2      _AppInitState.loadInitData.<anonymous closure> (package:fstore/app_init.dart:75:18)
+E/flutter (24491): #3      new Future.delayed.<anonymous closure> (dart:async/future.dart:316:39)
+E/flutter (24491): #4      _rootRun (dart:async/zone.dart:1122:38)
+E/flutter (24491): #5      _CustomZone.run (dart:async/zone.dart:1023:19)
+E/flutter (24491): #6      _CustomZone.runGuarded (dart:async/zone.dart:925:7)
+E/flutter (24491): #7      _CustomZone.bindCallbackGuarded.<anonymous closure> (dart:async/zone.dart:965:23)
+E/flutter (24491): #8      _rootRun (dart:async/zone.dart:1126:13)
+E/flutter (24491): #9      _CustomZone.run (dart:async/zone.dart:1023:19)
+E/flutter (24491): #10     _CustomZone.bindCallback.<anonymous closure> (dart:async/zone.dart:949:23)
+E/flutter (24491): #11     Timer._createTimer.<anonymous closure> (dart:async-patch/timer_patch.dart:23:15)
+E/flutter (24491): #12     _Timer._runTimers (dart:isolate-patch/timer_impl.dart:384:19)
+E/flutter (24491): #13     _Timer._handleMessage (dart:isolate-patch/timer_impl.dart:418:5)
+E/flutter (24491): #14     _RawReceivePortImpl._handleMessage (dart:isolate-patch/isolate_patch.dart:174:12)
+E/flutter (24491): 
+I/flutter (24491): [Fluxstore][AppState] build Theme
+I/flutter (24491): [Fluxstore][Tabbar] build
+I/flutter (24491): [Fluxstore][AppState] build
+I/flutter (24491): [Fluxstore][AppState] build Theme
+I/flutter (24491): [Fluxstore][Tabbar] build
+
